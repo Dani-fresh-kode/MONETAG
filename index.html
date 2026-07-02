@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="romantic">
+
+<head>
+  <meta name="monetag" content="f11d5a23d38ec18c92a67c769b3a63e9">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A beautiful birthday gift page filled with welcome">
+  <title>Dream Space</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="DREAMSPACE/style.css">
+</head>
+
+<body>
+  <!-- Theme Toggle -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+  </button>
+
+  <!-- Theme Selector -->
+  <div class="theme-selector">
+    <button id="theme-selector-btn" class="theme-selector-btn" aria-label="Select color theme">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="13.5" cy="6.5" r=".5"></circle>
+        <circle cx="17.5" cy="10.5" r=".5"></circle>
+        <circle cx="8.5" cy="7.5" r=".5"></circle>
+        <circle cx="6.5" cy="12.5" r=".5"></circle>
+        <path
+          d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z">
+        </path>
+      </svg>
+    </button>
+    <div id="theme-dropdown" class="theme-dropdown">
+      <button class="theme-item" data-theme="ocean">
+        <div class="theme-colors">
+          <div class="theme-color" style="background: #0099FF"></div>
+          <div class="theme-color" style="background: #0066CC"></div>
+        </div>
+        <span>Ocean</span>
+      </button>
+      <button class="theme-item" data-theme="sunset">
+        <div class="theme-colors">
+          <div class="theme-color" style="background: #FF6B35"></div>
+          <div class="theme-color" style="background: #F72C5B"></div>
+        </div>
+        <span>Sunset</span>
+      </button>
+      <button class="theme-item" data-theme="galaxy">
+        <div class="theme-colors">
+          <div class="theme-color" style="background: #9D4EDD"></div>
+          <div class="theme-color" style="background: #C026D3"></div>
+        </div>
+        <span>Galaxy</span>
+      </button>
+      <button class="theme-item" data-theme="forest">
+        <div class="theme-colors">
+          <div class="theme-color" style="background: #4ADE80"></div>
+          <div class="theme-color" style="background: #22C55E"></div>
+        </div>
+        <span>Forest</span>
+      </button>
+      <button class="theme-item" data-theme="rose">
+        <div class="theme-colors">
+          <div class="theme-color" style="background: #F43F5E"></div>
+          <div class="theme-color" style="background: #FB7185"></div>
+        </div>
+        <span>Rose</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-particles"></div>
+    <div class="hero-content">
+      <h1 class="hero-title-1">WELCOME</h1>
+      <h2 class="hero-title-2">TO DREAMSPACE <br>🚀</h2>
+    </div>
+  </section>
+  <!-- welcome Letter Section -->
+  <section class="welcome-letter-section">
+    <div class="container-small">
+      <div class="welcome-letter-card">
+        <h2 class="welcome-letter-title">To All Our Customers</h2>
+        <p class="welcome-letter-text">
+          <b>WELCOME TO DREAM SPACE !</b><br>
+          Where style meets vibe your one-stop plug for beauty, fashion, and everything that makes you stand out
+          effortlessly.
+        </p><br>
+        <p class="welcome-letter-text">
+          <b>WE BELIEVE CONFIDENCE STARTS HERE</b><br>
+          Everything we bring your way is meant to inspire you to stand out, stay true, and move with purpose.
+        </p><br>
+        <p class="welcome-letter-text">
+          <b>SHOP BOLD, DREAM LOUDER</b><br>
+          The Dream Space Crew’s got you covered with fresh finds, quality picks, and trends that keep you ahead.
+        </p><br>
+        <p class="welcome-letter-signature">
+          <b>Your imagination is the only limit !</b>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section">
+    <div class="gallery-bg"></div>
+    <div class="container">
+      <h2 class="section-title">Our Inventory</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item" style="animation-delay: 0s">
+          <div class="gallery-overlay">Room Decor</div>
+          <img src="imgs/IMG-20251107-WA0027.jpg" alt="Our beautiful memory together">
+        </div>
+        <div class="gallery-item" style="animation-delay: 0.1s">
+          <div class="gallery-overlay">Jewelry</div>
+          <img src="imgs/IMG-20251107-WA0014.jpg" alt="Flowers that remind me of you">
+        </div>
+        <div class="gallery-item" style="animation-delay: 0.2s">
+          <div class="gallery-overlay">Accessories</div>
+          <img src="imgs/IMG-20250930-WA0057.jpg" alt="Under the stars with you">
+        </div>
+        <div class="gallery-item" style="animation-delay: 0.3s">
+          <div class="gallery-overlay">Gift Sets</div>
+          <img src="imgs/IMG-20251106-WA0002.jpg" alt="Sweet moments we share">
+        </div>
+        <div class="gallery-item" style="animation-delay: 0s">
+          <div class="gallery-overlay">Girly Accessories</div>
+          <img src="imgs/IMG-20251107-WA0060.jpg" alt="Our beautiful memory together">
+        </div>
+        <div class="gallery-item" style="animation-delay: 0s">
+          <div class="gallery-overlay">Peace of mind</div>
+          <img src="imgs/Snapchat-199832276.jpg" alt="Our beautiful memory together">
+        </div>
+        <div class="gallery-item" style="animation-delay: 0s">
+          <div class="gallery-overlay">And much more...</div>
+          <img src="imgs/4915639.jpg" alt="Our beautiful memory together">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reasons Section -->
+  <section class="reasons-section">
+    <div class="container">
+      <div class="reasons-card">
+        <h2 class="section-title">Why Dream Space</h2>
+        <div class="reasons-list">
+          <div class="reason-item" style="animation-delay: 0s">
+            <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" viewBox="0 0 24 24" stroke-width="1.5"
+              fill="none" xmlns="http://www.w3.org/2000/svg" color="var(--color-primary)">
+              <path
+                d="M16.0614 10.4037L14 17L10 17L7.93865 10.4037C7.35085 8.52273 7.72417 6.47307 8.93738 4.92015L11.5272 1.6052C11.7674 1.29772 12.2326 1.29772 12.4728 1.6052L15.0626 4.92015C16.2758 6.47307 16.6491 8.52273 16.0614 10.4037Z"
+                stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M10 20C10 22 12 23 12 23C12 23 14 22 14 20" stroke="var(--color-primary)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M8.5 12.5C5 15 7 19 7 19L10 17" stroke="var(--color-primary)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M15.9312 12.5C19.4312 15 17.4312 19 17.4312 19L14.4312 17" stroke="var(--color-primary)"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path
+                d="M12 11C10.8954 11 10 10.1046 10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9C14 10.1046 13.1046 11 12 11Z"
+                stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <p><b>Quality You Can Trust</b><br> - every product is carefully tested before it hits our store.</p>
+          </div>
+
+          <div class="reason-item" style="animation-delay: 0.1s">
+            <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" viewBox="0 0 24 24" stroke-width="1.5"
+              fill="none" xmlns="http://www.w3.org/2000/svg" color="var(--color-primary)">
+              <path
+                d="M16.0614 10.4037L14 17L10 17L7.93865 10.4037C7.35085 8.52273 7.72417 6.47307 8.93738 4.92015L11.5272 1.6052C11.7674 1.29772 12.2326 1.29772 12.4728 1.6052L15.0626 4.92015C16.2758 6.47307 16.6491 8.52273 16.0614 10.4037Z"
+                stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M10 20C10 22 12 23 12 23C12 23 14 22 14 20" stroke="var(--color-primary)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M8.5 12.5C5 15 7 19 7 19L10 17" stroke="var(--color-primary)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M15.9312 12.5C19.4312 15 17.4312 19 17.4312 19L14.4312 17" stroke="var(--color-primary)"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path
+                d="M12 11C10.8954 11 10 10.1046 10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9C14 10.1046 13.1046 11 12 11Z"
+                stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+
+            <p><b>Exclusive Deals & Discounts </b><br> - Get access to limited offers you won’t find elsewhere.</p>
+          </div>
+          <div class="reason-item" style="animation-delay: 0.15s">
+            <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" viewBox="0 0 24 24" stroke-width="1.5"
+              fill="none" xmlns="http://www.w3.org/2000/svg" color="var(--color-primary)">
+              <path
+                d="M16.0614 10.4037L14 17L10 17L7.93865 10.4037C7.35085 8.52273 7.72417 6.47307 8.93738 4.92015L11.5272 1.6052C11.7674 1.29772 12.2326 1.29772 12.4728 1.6052L15.0626 4.92015C16.2758 6.47307 16.6491 8.52273 16.0614 10.4037Z"
+                stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M10 20C10 22 12 23 12 23C12 23 14 22 14 20" stroke="var(--color-primary)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M8.5 12.5C5 15 7 19 7 19L10 17" stroke="var(--color-primary)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M15.9312 12.5C19.4312 15 17.4312 19 17.4312 19L14.4312 17" stroke="var(--color-primary)"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path
+                d="M12 11C10.8954 11 10 10.1046 10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9C14 10.1046 13.1046 11 12 11Z"
+                stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+
+            <p><b>Great Variety</b><br> - From fashion to decor, everything you need in one place.</p>
+          </div>
+          <div class="reason-item" style="animation-delay: 0.2s">
+            <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" viewBox="0 0 24 24" stroke-width="1.5"
+              fill="none" xmlns="http://www.w3.org/2000/svg" color="var(--color-primary)">
+              <path
+                d="M16.0614 10.4037L14 17L10 17L7.93865 10.4037C7.35085 8.52273 7.72417 6.47307 8.93738 4.92015L11.5272 1.6052C11.7674 1.29772 12.2326 1.29772 12.4728 1.6052L15.0626 4.92015C16.2758 6.47307 16.6491 8.52273 16.0614 10.4037Z"
+                stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M10 20C10 22 12 23 12 23C12 23 14 22 14 20" stroke="var(--color-primary)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M8.5 12.5C5 15 7 19 7 19L10 17" stroke="var(--color-primary)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M15.9312 12.5C19.4312 15 17.4312 19 17.4312 19L14.4312 17" stroke="var(--color-primary)"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path
+                d="M12 11C10.8954 11 10 10.1046 10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9C14 10.1046 13.1046 11 12 11Z"
+                stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+
+            <p><b>Gift-Ready Packaging</b><br> - Every order arrives looking fresh and premium.</p>
+          </div>
+          <div class="reason-item" style="animation-delay: 0.25s">
+            <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" viewBox="0 0 24 24" stroke-width="1.5"
+              fill="none" xmlns="http://www.w3.org/2000/svg" color="var(--color-primary)">
+              <path
+                d="M16.0614 10.4037L14 17L10 17L7.93865 10.4037C7.35085 8.52273 7.72417 6.47307 8.93738 4.92015L11.5272 1.6052C11.7674 1.29772 12.2326 1.29772 12.4728 1.6052L15.0626 4.92015C16.2758 6.47307 16.6491 8.52273 16.0614 10.4037Z"
+                stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M10 20C10 22 12 23 12 23C12 23 14 22 14 20" stroke="var(--color-primary)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M8.5 12.5C5 15 7 19 7 19L10 17" stroke="var(--color-primary)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M15.9312 12.5C19.4312 15 17.4312 19 17.4312 19L14.4312 17" stroke="var(--color-primary)"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path
+                d="M12 11C10.8954 11 10 10.1046 10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9C14 10.1046 13.1046 11 12 11Z"
+                stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+
+            <p><b>Secure Payments</b><br> - Shop confidently with trusted, safe payment methods.</p>
+          </div>
+          <div class="reason-item" style="animation-delay: 0.3s">
+            <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" viewBox="0 0 24 24" stroke-width="1.5"
+              fill="none" xmlns="http://www.w3.org/2000/svg" color="var(--color-primary)">
+              <path
+                d="M16.0614 10.4037L14 17L10 17L7.93865 10.4037C7.35085 8.52273 7.72417 6.47307 8.93738 4.92015L11.5272 1.6052C11.7674 1.29772 12.2326 1.29772 12.4728 1.6052L15.0626 4.92015C16.2758 6.47307 16.6491 8.52273 16.0614 10.4037Z"
+                stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M10 20C10 22 12 23 12 23C12 23 14 22 14 20" stroke="var(--color-primary)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M8.5 12.5C5 15 7 19 7 19L10 17" stroke="var(--color-primary)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M15.9312 12.5C19.4312 15 17.4312 19 17.4312 19L14.4312 17" stroke="var(--color-primary)"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path
+                d="M12 11C10.8954 11 10 10.1046 10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9C14 10.1046 13.1046 11 12 11Z"
+                stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+
+            <p><b>Modern Shopping Experience</b><br> - Clean design, smooth navigation, and easy checkout.</p>
+          </div>
+          <div class="reason-item" style="animation-delay: 0.35s">
+            <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" viewBox="0 0 24 24" stroke-width="1.5"
+              fill="none" xmlns="http://www.w3.org/2000/svg" color="var(--color-primary)">
+              <path
+                d="M16.0614 10.4037L14 17L10 17L7.93865 10.4037C7.35085 8.52273 7.72417 6.47307 8.93738 4.92015L11.5272 1.6052C11.7674 1.29772 12.2326 1.29772 12.4728 1.6052L15.0626 4.92015C16.2758 6.47307 16.6491 8.52273 16.0614 10.4037Z"
+                stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M10 20C10 22 12 23 12 23C12 23 14 22 14 20" stroke="var(--color-primary)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M8.5 12.5C5 15 7 19 7 19L10 17" stroke="var(--color-primary)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M15.9312 12.5C19.4312 15 17.4312 19 17.4312 19L14.4312 17" stroke="var(--color-primary)"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path
+                d="M12 11C10.8954 11 10 10.1046 10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9C14 10.1046 13.1046 11 12 11Z"
+                stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+
+            <p><b>Locally Available & Reliable</b><br> - You’re not waiting for months for international shipping.</p>
+          </div>
+          <div class="reason-item" style="animation-delay: 0.4s">
+            <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" viewBox="0 0 24 24" stroke-width="1.5"
+              fill="none" xmlns="http://www.w3.org/2000/svg" color="var(--color-primary)">
+              <path
+                d="M16.0614 10.4037L14 17L10 17L7.93865 10.4037C7.35085 8.52273 7.72417 6.47307 8.93738 4.92015L11.5272 1.6052C11.7674 1.29772 12.2326 1.29772 12.4728 1.6052L15.0626 4.92015C16.2758 6.47307 16.6491 8.52273 16.0614 10.4037Z"
+                stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M10 20C10 22 12 23 12 23C12 23 14 22 14 20" stroke="var(--color-primary)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M8.5 12.5C5 15 7 19 7 19L10 17" stroke="var(--color-primary)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M15.9312 12.5C19.4312 15 17.4312 19 17.4312 19L14.4312 17" stroke="var(--color-primary)"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path
+                d="M12 11C10.8954 11 10 10.1046 10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9C14 10.1046 13.1046 11 12 11Z"
+                stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+
+            <p><b>Consistent Restocks</b><br> - Your favorite items won’t vanish after one drop.</p>
+          </div>
+          <div class="reason-item" style="animation-delay: 0.45s">
+            <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" viewBox="0 0 24 24" stroke-width="1.5"
+              fill="none" xmlns="http://www.w3.org/2000/svg" color="var(--color-primary)">
+              <path
+                d="M16.0614 10.4037L14 17L10 17L7.93865 10.4037C7.35085 8.52273 7.72417 6.47307 8.93738 4.92015L11.5272 1.6052C11.7674 1.29772 12.2326 1.29772 12.4728 1.6052L15.0626 4.92015C16.2758 6.47307 16.6491 8.52273 16.0614 10.4037Z"
+                stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M10 20C10 22 12 23 12 23C12 23 14 22 14 20" stroke="var(--color-primary)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M8.5 12.5C5 15 7 19 7 19L10 17" stroke="var(--color-primary)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M15.9312 12.5C19.4312 15 17.4312 19 17.4312 19L14.4312 17" stroke="var(--color-primary)"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path
+                d="M12 11C10.8954 11 10 10.1046 10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9C14 10.1046 13.1046 11 12 11Z"
+                stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+
+            <p><b>Dream Space Promise</b><br> - Everything we sell reflects quality, trust, and style.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+          <rect width="256" height="256" fill="none" />
+          <path
+            d="M72,104a32,32,0,0,1,32-32l16,32-12.32,18.47a48.19,48.19,0,0,0,25.85,25.85L152,136l32,16a32,32,0,0,1-32,32A80,80,0,0,1,72,104Z"
+            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
+          <path d="M79.93,211.11a96,96,0,1,0-35-35h0L32.42,213.46a8,8,0,0,0,10.12,10.12l37.39-12.47Z" fill="none"
+            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
+        </svg>
+      </div>
+      <a href="https://chat.whatsapp.com/Iceh5tC22nC53RvXJUg2zF?mode=wwt" style="text-decoration: none;">
+        <p class="footer-text">Join WhatsApp Group</p>
+      </a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
